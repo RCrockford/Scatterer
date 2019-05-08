@@ -19,7 +19,7 @@ namespace scatterer
 	public class SkyNode: MonoBehaviour
 	{
 		[Persistent]
-		protected string name;
+		protected new string name;
 		public UrlDir.UrlConfig configUrl;
 		
 		public GameObject atmosphereMesh;

@@ -485,7 +485,7 @@ namespace scatterer {
 			Vector2 sample34XY;
 			Vector2 sample34ZW;
 			
-			UnityEngine.Random.seed = 0;
+			UnityEngine.Random.InitState(0);
 			
 			for (int x = 0; x < m_fourierGridSize; x++) {
 				for (int y = 0; y < m_fourierGridSize; y++) {

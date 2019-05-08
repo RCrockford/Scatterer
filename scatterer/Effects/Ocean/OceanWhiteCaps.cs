@@ -12,7 +12,7 @@ namespace scatterer {
 		Material m_whiteCapsPrecomputeMat;
 
 		[Persistent]
-		protected string name;
+		protected new string name;
 		
 		[Persistent] public int m_foamAnsio = 9;
 		

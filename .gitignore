@@ -13,3 +13,6 @@ scatterer/bin/Release/TDx.TDxInput.dll
 scatterer/bin/Release/TrackIRUnity.dll
 scatterer/bin/Release/UnityEngine.dll
 scatterer/Shaders/scattererShaders/Library
+scatterer/.vs/scatterer/v15/.suo
+scatterer/.vs/scatterer/v15/Server/sqlite3/db.lock
+scatterer/.vs/scatterer/v15/Server/sqlite3/storage.ide

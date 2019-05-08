@@ -28,7 +28,7 @@ namespace scatterer
 			}
 
 
-			m_Buffer.Blit (null, Core.Instance.bufferRenderingManager.depthTexture, m_Material); //change to shadowmap texture
+			m_Buffer.Blit ((Texture)null, Core.Instance.bufferRenderingManager.depthTexture, m_Material); //change to shadowmap texture
 
 			m_Camera.AddCommandBuffer (CameraEvent.AfterDepthTexture, m_Buffer);
 		}

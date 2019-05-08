@@ -161,9 +161,10 @@ namespace scatterer
 				m_oceanMaterial.DisableKeyword ("REFRACTION_ON");
 			}
 
-			if (Core.Instance.shadowsOnOcean && (QualitySettings.shadows != ShadowQuality.Disable))
+            // KSP 1.3.1 shadow fudges, just assume low res = hard only and everytrhing else is soft.
+			if (Core.Instance.shadowsOnOcean)
 			{
-				if (QualitySettings.shadows == ShadowQuality.HardOnly)
+				if (QualitySettings.shadowResolution == ShadowResolution.Low)
 				{
 					m_oceanMaterial.EnableKeyword ("OCEAN_SHADOWS_HARD");
 					m_oceanMaterial.DisableKeyword ("OCEAN_SHADOWS_SOFT");
